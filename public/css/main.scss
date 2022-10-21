@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --primary: #0a192f;
+    --secondary: #64ffDA;
+    --fprimary: #CCD6F6;
+    --fsecondary : #8892B0;
+    --denger:rgb(255, 86, 86);
+    --p : 0;
+}
+
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anonymous Pro', monospace;
+    color: var(--fprimary);
+}
+
+body{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+canvas{
+    height: 100vh;
+    position: absolute;
+    image-rendering: pixelated;
+}
+#loading{
+    position: relative;
+    width: 300px;
+    height: auto;
+    div{
+        animation: pending_progress 60s steps(48) forwards;
+        width: 0%;
+        height: 1px;
+        background-color: var(--fprimary);
+    }
+    p{
+        animation: pending_percentage 60s steps(48) forwards;
+        counter-reset: pending_percentage var(--p);
+        font-size: small;
+        display: flex;
+        justify-content: end;
+    }
+    p::after{
+        content: counter(pending_percentage) "%";
+    }
+}
+#chooser{
+    display: none; //grid
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+    width: auto;
+    max-width: 600px;
+    max-height: 420px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #64ffDA;
+    img{
+        width: 60px;
+    }
+    .color_picker{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 20px;
+        div{
+            padding: 15px 0px 0px 0px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            input[type="color"] {
+                cursor: pointer;
+                -webkit-appearance: none;
+                border: none;
+                width: 50px;
+            }
+            input[type="color"]::-webkit-color-swatch-wrapper {
+                padding: 0;
+            }
+            input[type="color"]::-webkit-color-swatch {
+                border: none;
+            }
+        }
+    }
+    #charactor{
+        width: 80px;
+        height: 80px;
+        border: 1px solid var(--fprimary);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: center;
+        background-color: black;
+    }
+    .sound{
+        display: flex;
+        justify-content: center;
+    }
+    input[type="checkbox"]{
+        accent-color: var(--secondary);
+    }
+    .level{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 150px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .level_chooser{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            counter-reset: level_box;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                margin-top: 10px;
+                input{
+                    display: none;
+                }
+                label{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: larger;
+                    color: var(--secondary);
+                    cursor: pointer;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 5px;
+                    border: 1px solid var(--fprimary);
+                }
+                input[type="radio"]:checked + label{
+                    box-shadow: 0px 0px 10px 1px var(--secondary);
+                }
+                input[type="radio"]:disabled + label::before{
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%2364ffDA' class='bi bi-shield-lock-fill' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z'/%3E%3C/svg%3E");
+                }
+                input[type="radio"]:enabled + label::before{
+                    counter-increment: level_box;
+                    content: counter(level_box);
+                }
+            }
+        }
+    }
+    .apply_button{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-around;
+        button{
+            cursor: pointer;
+            font-size: medium;
+            padding: 7px 15px;
+            background-color: var(--primary);
+            border: 1px solid var(--fprimary);
+        }
+        button:nth-child(1):hover{
+            border: 1px solid var(--denger);
+        }
+        button:nth-child(2):hover{
+            border: 1px solid var(--secondary);
+        }
+    }
+}
+.screen{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    pointer-events: none;
+}
+#screen_01{
+    canvas{
+        background-color: black;
+    }
+}
+.scroll::-webkit-scrollbar {
+    width: 12px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #495670;
+    border: 3px solid #0a192f;
+    border-radius: 10px;
+}
+.scroll::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+@keyframes reset_percentage {
+    100%{
+        --p:0;
+    }
+}
+@keyframes reset_progress {
+    100%{
+        width: 0%;
+    }
+}
+@keyframes pending_percentage {
+    0%{
+        --p: 0;
+    }
+    25%{
+        --p: 10;
+    }
+    50%{
+        --p: 30;
+    }
+    100%{
+        --p: 48;
+    }
+}
+@keyframes pending_progress {
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 10%;
+    }
+    50%{
+        width: 30%;
+    }
+    100%{
+        width: 48%;
+    }
+}
+@keyframes success_percentage {
+    100%{
+        --p: 100;
+    }
+}
+@keyframes success_progress {
+    100%{
+        width: 100%;
+    }
+}

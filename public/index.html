@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Battle City</title>
+</head>
+<body>
+    <div id="loading">
+        <div></div>
+        <p></p>
+    </div>
+    <div id="chooser">
+        <img src="./src/logo.svg" alt="...">
+        <div></div>
+        <div class="color_picker">
+            <p>Choose the color of your character!</p>
+            <div>
+                <input type="color" value="#E7E794" id="c1">
+                <input type="color" value="#E79C21" id="c2">
+                <input type="color" value="#6B6B00" id="c3">
+            </div>
+        </div>
+        <div id="charactor"></div>
+        <div class="sound">Apply sound</div>
+        <input type="checkbox" checked id="sound">
+        <div class="level scroll">
+            <div class="level_chooser">
+                <div>
+                    <input type="radio" name="group" checked  id="level_1" value="level_1">
+                    <label for="level_1"></label>
+                </div>
+                <div>
+                    <input type="radio" name="group" disabled id="level_2" value="level_2">
+                    <label for="level_2"></label>
+                </div>
+                <div>
+                    <input type="radio" name="group" disabled id="level_3" value="level_3">
+                    <label for="level_3"></label>
+                </div>
+                <div>
+                    <input type="radio" name="group" disabled id="level_4" value="level_4">
+                    <label for="level_4"></label>
+                </div>
+                <div>
+                    <input type="radio" name="group" disabled id="level_5" value="level_5">
+                    <label for="level_5"></label>
+                </div>
+                <div>
+                    <input type="radio" name="group" disabled id="level_6" value="level_6">
+                    <label for="level_6"></label>
+                </div>
+                <div>
+                    <input type="radio" name="group" disabled id="level_7" value="level_7">
+                    <label for="level_7"></label>
+                </div>
+            </div>
+        </div>
+        <div class="apply_button">
+            <button>Exit</button>
+            <button>Apply</button>
+        </div>
+    </div>
+    <div id="screen_01" class="screen"></div>
+    <div id="screen_02" class="screen"></div>
+    <div id="screen_03" class="screen"></div>
+    <div id="screen_04" class="screen"></div>
+    <script>
+        CSS.registerProperty({
+            name: "--p",
+            syntax: "<integer>",
+            initialValue:0,
+            inherits:true,
+        });
+    </script>
+    <script src="./js/main.js" type="module" defer></script>
+</body>
+</html>

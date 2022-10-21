@@ -1,0 +1,165 @@
+{
+    "play_ground":[{
+        "name": "road",
+        "screen":"0",
+        "area":[1,21,1,21]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[3,5,2,8]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[17,19,2,8]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[10,12,6,8]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[4,6,14,19]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[10,12,16,18]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[16,18,14,19]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[1,4,11,11]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[18,21,11,11]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[9,13,13,13]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[9,13,11,12]
+    },
+    {
+        "name": "falcon",
+        "screen":"01",
+        "area":[11,11,21,21]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[10,10,21,21]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[12,12,21,21]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[10,12,20,20]
+    }],
+    "enemys_data":[{
+        "round":1,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[0,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":1,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[320,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[0,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[320,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[0,144],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[320,144],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    }],
+    "player_data":{
+        "spawn_poin":[112,288],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"]
+    }
+}
