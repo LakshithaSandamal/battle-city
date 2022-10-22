@@ -74,7 +74,7 @@ export default class GamePanel{
                 setTimeout(()=>this.#battleFail(),1000);
             }
         }else if(data == "falcon"){
-            setTimeout(()=>this.#battleFail(),1000);
+            ()=>this.#battleFail();
         }else{
             this.#enemy --;
             if(this.#enemy == 0){
