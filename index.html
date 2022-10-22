@@ -59,6 +59,20 @@
                 </div>
             </div>
         </div>
+        <div class="read-more">
+            <input type="checkbox" id="read-more">
+            <label for="read-more">
+                read more
+                <i></i>
+                <div>
+                    <p>Move Up : W or arrow up</p>
+                    <p>Move Right : D or arrow right</p>
+                    <p>Move Down : S or arrow down</p>
+                    <p>Move Left : A or arrow left</p>
+                    <p>Shoot : C or O</p>
+                </div>
+            </label>
+        </div>
         <div class="apply_button">
             <button>Exit</button>
             <button>Apply</button>
@@ -68,6 +82,15 @@
     <div id="screen_02" class="screen"></div>
     <div id="screen_03" class="screen"></div>
     <div id="screen_04" class="screen"></div>
+    <div class="screen">
+        <div class="d-none" id="notification">
+            <div></div>
+        </div>
+    </div>
+    <div class="game-pause">
+        <input type="checkbox" id="pause">
+        <label for="pause" class="d-none" id="game-pause"></label>
+    </div>
     <script>
         CSS.registerProperty({
             name: "--p",

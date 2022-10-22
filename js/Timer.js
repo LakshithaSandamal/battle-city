@@ -6,6 +6,7 @@ export default class Timer{
     #initAnimetion;
     #updateFn = new Map();
     #drawFn = new Map();
+    #running;
 
     constructor(){
         if(Timer.#instance){
@@ -43,13 +44,18 @@ export default class Timer{
     }
 
     start(){
+        this.#running = true;
         this.#init();
     }
     stop(){
+        this.#running = false;
         cancelAnimationFrame(this.#initAnimetion);
+        this.#lastTime = 0;
+    }
+    hasRunning(){
+        return this.#running;
     }
     clearAll(){
-        Timer.#instance = undefined;
         this.#updateFn.clear();
         this.#drawFn.clear();
     }

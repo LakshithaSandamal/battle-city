@@ -47,7 +47,7 @@ export default class Falcon extends Battle{
         AudioBoard.playAudio('die_falcon');
         this.#ctx.drawImage(SpriteSheet.getSpriteBuffer('die_falcon'),this.#pos.x,this.#pos.y);
         this.animationEnd();
-        setTimeout(()=>this.#destroyCallBack() , 1000);
+        this.#destroyCallBack();
     }
     #resetFalcon(){
         Falcon.#instance = undefined;

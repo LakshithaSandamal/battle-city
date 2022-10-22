@@ -71,15 +71,15 @@ export default class GamePanel{
             if(this.#playerHealth){
                 this.#definePlayer();
             }else{
-                this.#battleFail();
+                setTimeout(()=>this.#battleFail(),1000);
             }
         }else if(data == "falcon"){
-            this.#battleFail();
+            setTimeout(()=>this.#battleFail(),1000);
         }else{
             this.#enemy --;
             if(this.#enemy == 0){
                 if(this.#currentRound == this.#round){
-                    this.#battleSuccess();
+                    setTimeout(()=>this.#battleSuccess(),1000);
                 }else{
                     this.#currentRound ++;
                     setTimeout(()=>this.#defineRoundEnemy(),2000);
@@ -92,17 +92,29 @@ export default class GamePanel{
         this.#player();
         this.#falcon();
         Client.setCompliteLevel();
-        setTimeout(()=>this.#resetGamePanel(),5000);
+        this.#gameNotification('battle-win');
+        setTimeout(()=>{
+            this.#resetGamePanel();
+            this.#gameNotification('battle-win');
+        },6000);
         const timer = new Timer();
-        setTimeout(()=>timer.stop(),1000);
+        setTimeout(()=>timer.stop(),500);
     }
     #battleFail(){
         AudioBoard.playAudio('fail');
         this.#player();
         this.#falcon();
-        setTimeout(()=>this.#resetGamePanel(),2500);
+        this.#gameNotification('game-over');
+        setTimeout(()=>{
+            this.#resetGamePanel();
+            this.#gameNotification('game-over');
+        },3500);
         const timer = new Timer();
-        setTimeout(()=>timer.stop(),1000);
+        setTimeout(()=>timer.stop(),500);
+    }
+    #gameNotification(notifi){
+        document.getElementById('notification').classList.toggle('d-none');
+        document.querySelector('#notification div').classList.toggle(notifi);
     }
     #resetGamePanel(){
         GamePanel.#instance = undefined;
@@ -111,6 +123,7 @@ export default class GamePanel{
         element1.removeChild(element1.firstChild);
         let element2 = document.getElementById('screen_04');
         element2.removeChild(element2.firstChild);
+        document.getElementById('game-pause').classList.toggle('d-none');
 
         new Timer().clearAll();
         new BattleScreen().clear();

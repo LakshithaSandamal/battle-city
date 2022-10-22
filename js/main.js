@@ -11,10 +11,14 @@ import GamePanel from "./GamePanel.js";
 const chooser_box = document.getElementById('chooser');
 const exite_btn = document.querySelector('.apply_button button:nth-child(1)');
 const apply_btn = document.querySelector('.apply_button button:nth-child(2)');
+const game_pause = document.getElementById('game-pause');
 
+const timer = new Timer();
 
+const stopBattle = ()=>{
+    timer.hasRunning() ? timer.stop() : timer.start();
+}
 const createBattleCity = async() => {
-    const timer = new Timer();
     chooser_box.style.display = 'none';
     setClientData();
     document.getElementById('loading').style.display = 'block'; //---- animation
@@ -23,6 +27,7 @@ const createBattleCity = async() => {
     await createAllBuffer(levelData);
     progressStyle('success','1.5s forwards'); //---- animation
     await new Promise(resolve=> setTimeout(()=>resolve(),2000)); //---- animation
+    game_pause.classList.toggle('d-none');
     document.getElementById('loading').style.display = 'none'; //---- animation
     createPlayGround(levelData.play_ground);
     timer.setDraw('clear_battle',()=>new BattleScreen().clear());
@@ -34,3 +39,4 @@ const createBattleCity = async() => {
 await fetchBattleData();
 loadAssetsSuccess();
 apply_btn.addEventListener('click',createBattleCity);
+game_pause.addEventListener('click',stopBattle);

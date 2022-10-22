@@ -21,7 +21,7 @@ export default class Client{
         return this.#charactorImgData;
     }
 
-    static setCurrentLevel(level = "level_01"){
+    static setCurrentLevel(level){
         this.#currentLevel = level;
     }
     static getCurrentLevel(){
@@ -29,7 +29,7 @@ export default class Client{
     }
 
     static setCompliteLevel(){
-        this.#compliteLevel++;
+        this.#compliteLevel = Number(this.#currentLevel.split('_')[1].split('.')[0]) + 1;
     }
     static getCompliteLevel(){
         return this.#compliteLevel;
