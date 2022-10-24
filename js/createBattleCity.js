@@ -75,7 +75,8 @@ export function createPlayGround(data){
         const screen = tile.screen;
         for(let x1 = tile.area[0] , x2 = tile.area[1] ; x1 <= x2 ; x1++){
             for(let y1 = tile.area[2] , y2 = tile.area[3] ; y1 <= y2 ; y1++){
-                gridSheet.setTile(x1-1,y1-1,tile.name); tile.name !== "road" ? eval(`ctx_${screen}`).drawImage(SpriteSheet.getSpriteBuffer(tile.name),(x1-1)*16,(y1-1)*16) : '';
+                ["sea_01","sea_02","sea_03"].includes(tile.name) ? gridSheet.setTile(x1-1,y1-1,"sea") : gridSheet.setTile(x1-1,y1-1,tile.name); 
+                tile.name !== "road" ? eval(`ctx_${screen}`).drawImage(SpriteSheet.getSpriteBuffer(tile.name),(x1-1)*16,(y1-1)*16) : '';
             }
         }
     });

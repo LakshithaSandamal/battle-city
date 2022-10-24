@@ -1,0 +1,385 @@
+{
+    "play_ground":[{
+        "name": "road",
+        "screen":"0",
+        "area":[1,21,1,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[2,5,5,5]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[5,7,6,6]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[7,7,7,7]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[10,12,6,7]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[15,15,7,7]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[15,17,6,6]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[17,20,5,5]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[1,1,8,8]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[1,2,9,9]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[3,3,10,11]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[1,2,12,12]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[1,1,13,13]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[10,12,12,13]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[21,21,8,8]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[20,21,9,9]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[19,19,10,11]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[20,21,12,12]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[21,21,13,13]
+    },
+    {
+        "name":"siment",
+        "screen":"01",
+        "area":[1,1,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[2,2,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[3,3,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[4,4,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[5,5,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[6,6,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[7,7,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[8,8,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[14,14,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[15,15,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[16,16,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[17,17,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[18,18,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[19,19,20,21]
+    },
+    {
+        "name": "grass",
+        "screen":"02",
+        "area":[20,20,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[21,21,20,21]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[9,12,2,2]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[2,5,3,4]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[10,13,3,3]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[10,12,4,4]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[11,11,5,5]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[17,20,3,4]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[6,7,4,5]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[15,16,4,5]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[8,9,6,7]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[13,14,6,7]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[1,2,10,11]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[20,21,10,11]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[10,12,14,14]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[9,13,15,15]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[7,15,16,16]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[6,8,17,17]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[10,12,17,17]
+    },
+    {
+        "name": "siment",
+        "screen":"01",
+        "area":[14,16,17,17]
+    },
+    {
+        "name": "sea_01",
+        "screen":"01",
+        "area":[10,12,8,11]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[11,11,3,3]
+    },
+    {
+        "name": "falcon",
+        "screen":"01",
+        "area":[11,11,21,21]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[10,10,21,21]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[12,12,21,21]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[10,12,20,20]
+    }],
+    "enemys_data":[{
+        "round":1,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[0,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":1,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[320,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[0,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[320,0],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[0,144],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[320,144],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    }],
+    "player_data":{
+        "spawn_poin":[112,288],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"]
+    }
+}

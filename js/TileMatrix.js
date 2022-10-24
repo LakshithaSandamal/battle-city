@@ -23,11 +23,6 @@ export default class TileMatrix{
         }
         return this.#undefinedTile;
     } 
-
-    getGrid(){
-        return this.#grid;
-    }
-    
     clear(){
         TileMatrix.#instance = undefined;
         this.#grid = undefined;

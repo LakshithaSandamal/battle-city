@@ -1,3 +1,4 @@
+import AudioBoard from "./AudioBoard.js";
 import Battle from "./Battle.js";
 import BattleMatrix from "./BattleMatrix.js";
 import BattleScreen from "./BattleScreen.js";
@@ -50,6 +51,7 @@ export default class Effect extends Battle{
                 break;
             }
         }
+        AudioBoard.playAudio('drop_effect');
     }
     #update(){
         this.#battleGrid.setTile(this.#pos.x,this.#pos.y,this.#data);

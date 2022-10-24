@@ -50,7 +50,7 @@ export default class Player extends Battle{
         this.#level = data.move_speed+(data.bullet_distroy_tile.length - 1)*2;
         this.#color = data.color;
         this.#ctx = new BattleScreen().getContext();
-        this.#pos = new Vec2(data.spawn_poin);
+        this.#pos = new Vec2([(data.spawn_poin[0]-1)*this.#size,(data.spawn_poin[1]-1)*this.#size]);
         this.#move = new Vec2();
         this.#moveSpeed = data.move_speed;
         this.#disableTile = data.move_disable;
@@ -65,7 +65,6 @@ export default class Player extends Battle{
         this.#controlar = new KeyBoard();
         this.#destroyMe = destroyMe;
         this.#define();
-        this.update = ()=> this.#update();
         this.draw = ()=> this.#draw();
 
         return ()=>this.#resetPlayer();
@@ -97,6 +96,7 @@ export default class Player extends Battle{
         this.#frame = this.#directionBuffer.length;
         this.#defaultFrameRate = 0;
         this.#frameRate = 0.125;
+        this.update = ()=> this.#update();
     }
     #idle(){
         this.#defaultFrameRate = 0;

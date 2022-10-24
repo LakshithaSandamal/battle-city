@@ -7,52 +7,82 @@
     {
         "name": "wall",
         "screen":"01",
-        "area":[3,5,2,8]
+        "area":[3,4,2,7]
     },
     {
         "name": "wall",
         "screen":"01",
-        "area":[17,19,2,8]
-    },
-    {
-        "name": "wall",
-        "screen":"01",
-        "area":[10,12,6,8]
-    },
-    {
-        "name": "wall",
-        "screen":"01",
-        "area":[4,6,14,19]
-    },
-    {
-        "name": "wall",
-        "screen":"01",
-        "area":[10,12,16,18]
-    },
-    {
-        "name": "wall",
-        "screen":"01",
-        "area":[16,18,14,19]
+        "area":[8,9,2,7]
     },
     {
         "name": "siment",
         "screen":"01",
-        "area":[1,4,11,11]
+        "area":[10,12,4,5]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[13,14,2,7]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[18,19,2,7]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[1,2,10,10]
     },
     {
         "name": "siment",
         "screen":"01",
-        "area":[18,21,11,11]
+        "area":[1,2,11,11]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[5,8,10,11]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[14,17,10,11]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[20,21,10,10]
     },
     {
         "name": "siment",
         "screen":"01",
-        "area":[9,13,13,13]
+        "area":[20,21,11,11]
     },
     {
-        "name": "grass",
-        "screen":"02",
-        "area":[9,13,11,12]
+        "name": "wall",
+        "screen":"01",
+        "area":[3,4,14,19]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[8,9,13,18]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[10,12,15,16]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[13,14,13,18]
+    },
+    {
+        "name": "wall",
+        "screen":"01",
+        "area":[18,19,14,19]
     },
     {
         "name": "falcon",
@@ -77,7 +107,7 @@
     "enemys_data":[{
         "round":1,
         "color":["FFFFFF","ADADAD","00424A"],
-        "spawn_poin":[0,0],
+        "spawn_poin":[1,1],
         "spawn_direction":"up",
         "move_speed":1,
         "move_disable":["wall","siment","sea","undefined"],
@@ -90,7 +120,33 @@
     {
         "round":1,
         "color":["FFFFFF","ADADAD","00424A"],
-        "spawn_poin":[320,0],
+        "spawn_poin":[1,9],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":1,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[21,1],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":1,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[21,9],
         "spawn_direction":"up",
         "move_speed":1,
         "move_disable":["wall","siment","sea","undefined"],
@@ -103,7 +159,7 @@
     {
         "round":2,
         "color":["FFFFFF","ADADAD","00424A"],
-        "spawn_poin":[0,0],
+        "spawn_poin":[1,1],
         "spawn_direction":"up",
         "move_speed":1,
         "move_disable":["wall","siment","sea","undefined"],
@@ -116,7 +172,20 @@
     {
         "round":2,
         "color":["FFFFFF","ADADAD","00424A"],
-        "spawn_poin":[320,0],
+        "spawn_poin":[1,9],
+        "spawn_direction":"up",
+        "move_speed":2,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":2,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[21,1],
         "spawn_direction":"up",
         "move_speed":1,
         "move_disable":["wall","siment","sea","undefined"],
@@ -129,7 +198,20 @@
     {
         "round":2,
         "color":["FFFFFF","ADADAD","00424A"],
-        "spawn_poin":[0,144],
+        "spawn_poin":[21,9],
+        "spawn_direction":"up",
+        "move_speed":2,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":3,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[1,1],
         "spawn_direction":"up",
         "move_speed":1,
         "move_disable":["wall","siment","sea","undefined"],
@@ -140,20 +222,163 @@
         "effect":null
     },
     {
-        "round":2,
+        "round":3,
         "color":["FFFFFF","ADADAD","00424A"],
-        "spawn_poin":[320,144],
+        "spawn_poin":[21,1],
         "spawn_direction":"up",
         "move_speed":1,
         "move_disable":["wall","siment","sea","undefined"],
         "bullet_rate": 1.5,
         "bullet_speed": 2,
         "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":3,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[1,9],
+        "spawn_direction":"up",
+        "move_speed":2,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":3,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[21,9],
+        "spawn_direction":"up",
+        "move_speed":2,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":3,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[1,12],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":3,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[21,12],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":4,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[1,1],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":4,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[11,1],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":4,
+        "color":["FFFFFF","B53121","590D79"],
+        "spawn_poin":[21,1],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":{"type":"level_up" , "other":1}
+    },
+    {
+        "round":4,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[1,9],
+        "spawn_direction":"up",
+        "move_speed":2,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":4,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[21,9],
+        "spawn_direction":"up",
+        "move_speed":2,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":4,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[1,12],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall","siment"],
+        "bullet_disable_tile":["wall","siment","undefined"],
+        "effect":null
+    },
+    {
+        "round":4,
+        "color":["FFFFFF","ADADAD","00424A"],
+        "spawn_poin":[21,12],
+        "spawn_direction":"up",
+        "move_speed":1,
+        "move_disable":["wall","siment","sea","undefined"],
+        "bullet_rate": 1.5,
+        "bullet_speed": 2,
+        "bullet_distroy_tile":["wall","siment"],
         "bullet_disable_tile":["wall","siment","undefined"],
         "effect":null
     }],
     "player_data":{
-        "spawn_poin":[112,288],
+        "spawn_poin":[8,19],
         "spawn_direction":"up",
         "move_speed":1,
         "move_disable":["wall","siment","sea","undefined"],
