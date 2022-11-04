@@ -161,6 +161,9 @@ canvas{
             padding: 7px 15px;
             background-color: var(--primary);
             border: 1px solid var(--fprimary);
+            a{
+                text-decoration: none;
+            }
         }
         button:nth-child(1):hover{
             border: 1px solid var(--denger);
