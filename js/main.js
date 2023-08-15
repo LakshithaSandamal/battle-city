@@ -9,8 +9,8 @@ import AudioBoard from "./AudioBoard.js";
 import GamePanel from "./GamePanel.js";
 
 const chooser_box = document.getElementById('chooser');
-const exite_btn = document.querySelector('.apply_button button:nth-child(1)');
-const apply_btn = document.querySelector('.apply_button button:nth-child(2)');
+// const exite_btn = document.querySelector('.apply_button button:nth-child(1)');
+const apply_btn = document.querySelector('.apply_button button:nth-child(1)');
 const game_pause = document.getElementById('game-pause');
 
 const timer = new Timer();
