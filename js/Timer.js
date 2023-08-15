@@ -3,7 +3,7 @@ export default class Timer{
     #FPS = 1/60;
     #accumulatedTime;
     #lastTime;
-    #initAnimetion;
+    #initAnimation;
     #updateFn = new Map();
     #drawFn = new Map();
     #running;
@@ -40,7 +40,7 @@ export default class Timer{
             this.#drawFn.forEach(fn=> fn());
         }
         this.#lastTime = dt;
-        this.#initAnimetion = requestAnimationFrame(this.#init.bind(this));
+        this.#initAnimation = requestAnimationFrame(this.#init.bind(this));
     }
 
     start(){
@@ -49,7 +49,7 @@ export default class Timer{
     }
     stop(){
         this.#running = false;
-        cancelAnimationFrame(this.#initAnimetion);
+        cancelAnimationFrame(this.#initAnimation);
         this.#lastTime = 0;
     }
     hasRunning(){
